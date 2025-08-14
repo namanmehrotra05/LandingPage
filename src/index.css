@@ -157,4 +157,26 @@ All colors MUST be HSL.
   .link-underline:hover::after {
     @apply w-full;
   }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    .container {
+      @apply px-4;
+    }
+    
+    /* Ensure text is readable on mobile */
+    h1 {
+      @apply text-4xl leading-tight;
+    }
+    
+    /* Better button spacing on mobile */
+    .mobile-stack {
+      @apply flex-col space-y-4 space-x-0;
+    }
+    
+    /* Touch-friendly buttons */
+    .mobile-touch {
+      @apply min-h-[44px] min-w-[44px];
+    }
+  }
 }

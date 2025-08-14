@@ -49,8 +49,14 @@ const Hero = () => {
               variant="outline"
               size="lg"
               className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg rounded-full transition-smooth backdrop-blur-sm"
+              onClick={() => {
+                const element = document.getElementById('about');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
-              View Our Work
+              Learn More
             </Button>
           </div>
 
