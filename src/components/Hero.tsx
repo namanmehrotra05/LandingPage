@@ -63,10 +63,19 @@ const Hero = () => {
           {/* Trust Indicators */}
           <div className="mt-12 animate-slide-in-right">
             <p className="text-white/70 text-sm mb-4">Trusted by 100+ businesses</p>
-            <div className="flex justify-center items-center space-x-8 opacity-60">
-              <div className="w-24 h-8 bg-white/20 rounded backdrop-blur-sm"></div>
-              <div className="w-24 h-8 bg-white/20 rounded backdrop-blur-sm"></div>
-              <div className="w-24 h-8 bg-white/20 rounded backdrop-blur-sm"></div>
+            <div className="flex flex-wrap justify-center items-center gap-6 opacity-80">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                <span className="text-white/90 text-sm font-medium">Fast Delivery</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                <span className="text-white/90 text-sm font-medium">Secure & Reliable</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                <span className="text-white/90 text-sm font-medium">Mobile Ready</span>
+              </div>
             </div>
           </div>
         </div>
