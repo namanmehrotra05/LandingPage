@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// Replace this with your actual GitHub repo name
 const repoName = "foursight";
 
 export default defineConfig(({ mode }) => ({
@@ -11,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: `/${repoName}/`,
+  base: mode === "production" ? `/${repoName}/` : "/",
   plugins: [react(), mode === "development" && componentTagger()].filter(
     Boolean
   ),

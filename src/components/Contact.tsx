@@ -240,7 +240,7 @@ const Contact = () => {
                     <Phone size={18} /> +91 98765 43210
                   </p>
                   <p className="flex items-center gap-2">
-                    <Building2 size={18} /> Gurugram, India
+                    <Building2 size={18} /> Bengaluru, India
                   </p>
                 </div>
               </div>
