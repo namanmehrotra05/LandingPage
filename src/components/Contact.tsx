@@ -234,10 +234,7 @@ const Contact = () => {
                 <h4 className="text-lg font-semibold mb-3">Contact Info</h4>
                 <div className="space-y-3 text-muted-foreground">
                   <p className="flex items-center gap-2">
-                    <Mail size={18} /> support@foursight.com
-                  </p>
-                  <p className="flex items-center gap-2">
-                    <Phone size={18} /> +91 98765 43210
+                    <Mail size={18} /> foursightech@gmail.com
                   </p>
                   <p className="flex items-center gap-2">
                     <Building2 size={18} /> Bengaluru, India
