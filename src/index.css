@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Four Sight Design System - Professional website creation service
+/* FourSight Design System - Professional website creation service
 All colors MUST be HSL.
 */
 
@@ -42,13 +42,21 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(216 75% 15%), hsl(214 70% 58%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(214 20% 98%));
-    
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(216 75% 15%),
+      hsl(214 70% 58%)
+    );
+    --gradient-subtle: linear-gradient(
+      180deg,
+      hsl(0 0% 100%),
+      hsl(214 20% 98%)
+    );
+
     /* Shadows */
     --shadow-elegant: 0 10px 30px -10px hsl(216 75% 15% / 0.1);
     --shadow-glow: 0 0 40px hsl(214 70% 58% / 0.15);
-    
+
     /* Animation */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -92,7 +100,11 @@ All colors MUST be HSL.
     --ring: 214 70% 58%;
 
     --gradient-hero: linear-gradient(135deg, hsl(216 75% 8%), hsl(214 70% 25%));
-    --gradient-subtle: linear-gradient(180deg, hsl(216 75% 8%), hsl(216 50% 12%));
+    --gradient-subtle: linear-gradient(
+      180deg,
+      hsl(216 75% 8%),
+      hsl(216 50% 12%)
+    );
     --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.3);
     --shadow-glow: 0 0 40px hsl(214 70% 58% / 0.3);
 
@@ -163,17 +175,17 @@ All colors MUST be HSL.
     .container {
       @apply px-4;
     }
-    
+
     /* Ensure text is readable on mobile */
     h1 {
       @apply text-4xl leading-tight;
     }
-    
+
     /* Better button spacing on mobile */
     .mobile-stack {
       @apply flex-col space-y-4 space-x-0;
     }
-    
+
     /* Touch-friendly buttons */
     .mobile-touch {
       @apply min-h-[44px] min-w-[44px];

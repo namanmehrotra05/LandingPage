@@ -1,21 +1,24 @@
-import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-websites.jpg';
+import { Button } from "@/components/ui/button";
+import heroImage from "@/assets/hero-websites.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
-    const element = document.getElementById('contact');
+    const element = document.getElementById("contact");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-0">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-0"
+    >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Modern website designs showcasing Four Sight's professional web development services"
+          alt="Modern website designs showcasing FourSight's professional web development services"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 gradient-hero opacity-90"></div>
@@ -31,9 +34,10 @@ const Hero = () => {
             <br />
             Your Success
           </h1>
-          
+
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto animate-fade-in-up">
-            We bring your business online with beautiful, responsive websites that convert visitors into customers.
+            We bring your business online with beautiful, responsive websites
+            that convert visitors into customers.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in mobile-stack">
@@ -44,15 +48,15 @@ const Hero = () => {
             >
               Get Started Today
             </Button>
-            
+
             <Button
               variant="outline"
               size="lg"
               className="bg-secondary/20 border-2 border-secondary text-white hover:bg-secondary hover:border-secondary px-8 py-4 text-lg rounded-full transition-smooth backdrop-blur-sm"
               onClick={() => {
-                const element = document.getElementById('about');
+                const element = document.getElementById("about");
                 if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
+                  element.scrollIntoView({ behavior: "smooth" });
                 }
               }}
             >
@@ -61,26 +65,33 @@ const Hero = () => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-12 animate-slide-in-right">
-            <p className="text-white/70 text-sm mb-4">Trusted by 100+ businesses</p>
-            <div className="flex flex-wrap justify-center items-center gap-6 opacity-80">
-              <div className="flex items-center space-x-2">
+          <div className="mt-16 animate-slide-in-right">
+            <p className="text-white/80 text-xl font-semibold mb-6">
+              Trusted by 100+ businesses
+            </p>
+            <div className="flex flex-wrap justify-center items-center gap-8 opacity-80">
+              <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                <span className="text-white/90 text-sm font-medium">Fast Delivery</span>
+                <span className="text-white/90 text-lg font-semibold">
+                  Fast Delivery
+                </span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                <span className="text-white/90 text-sm font-medium">Secure & Reliable</span>
+                <span className="text-white/90 text-lg font-semibold">
+                  Secure & Reliable
+                </span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                <span className="text-white/90 text-sm font-medium">Mobile Ready</span>
+                <span className="text-white/90 text-lg font-semibold">
+                  Mobile Ready
+                </span>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </section>
   );
 };
