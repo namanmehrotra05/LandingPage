@@ -48,7 +48,7 @@ const Hero = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg rounded-full transition-smooth backdrop-blur-sm"
+              className="bg-secondary/20 border-2 border-secondary text-white hover:bg-secondary hover:border-secondary px-8 py-4 text-lg rounded-full transition-smooth backdrop-blur-sm"
               onClick={() => {
                 const element = document.getElementById('about');
                 if (element) {
